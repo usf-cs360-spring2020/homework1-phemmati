@@ -87,12 +87,12 @@
         <!-- Right navbar items -->
         <div class="navbar-end">
           <!-- TODO: Update as needed -->
-          <a class="navbar-item" href="grade.html" title="About">
+          <a class="navbar-item" href="#Grade" title="About">
             <span class="icon"><i class="fas fa-tasks"></i></span>
             <span>Grade</span>
           </a>
 
-          <a class="navbar-item" href="about.html" title="About">
+          <a class="navbar-item" href="#About" title="About">
             <span class="icon"><i class="fas fa-info-circle"></i></span>
             <span>About</span>
           </a>
@@ -187,6 +187,77 @@
           </a>
         </p>
 
+<h2 id="grade">Grade</h2>
+
+        <!-- TODO: Remove custom style if no longer needed -->
+        <style>
+          table.grades tbody tr td:nth-child(1),
+          table.grades tbody tr td:nth-child(2) {
+            text-align: center;
+          }
+        </style>
+
+        <!-- TODO: Change or remove table -->
+        <!-- https://bulma.io/documentation/elements/table/ -->
+        <table class="table is-hoverable is-bordered grades">
+          <thead>
+            <tr>
+              <th>Letter</th>
+              <th>Done?</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+
+          <tbody>
+         
+                <tr>
+                  <td>C</td>
+                  <td><i class="has-text-success fas fa-check-circle"></i></td>
+                  <td>
+                    <p>This grade requirements has been successfully completed as:</p>
+                    <ul>
+                      <li>Created 3 different Tableau visualizations.</li>
+                      <li>Used 2 different encodings schemes:<ul>
+                          <li>Bar Chart</li>
+                          <li>Area Chart</li>
+                          <li>Line Chart</li>
+                        </ul>
+                      </li>
+                                        >
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>B</td>
+                  <td><i class="has-text-success fas fa-check-circle"></i></td>
+                  <td>
+                    <p>This grade requirements has been successfully completed as:</p>
+                    <ul>
+                      <li>Implemented one of the Tableau prototypes(Bar Chart) in D3</li>
+                      <li>Matched as much of the design as possible from my Tableau prototype.</li>
+                   
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>A</td>
+                  <td><i class="has-text-success fas fa-check-circle"></i></td>
+                  <td>
+                    <p>This grade requirements has been successfully completed as:</p>
+                    <ul>
+                      <li>Implemented one of the Tableau prototypes(Line Chart) in D3 </li>
+                      <li>Matched as much of the design as possible from my Tableau prototype.</li>
+                      
+                    </ul>
+                  </td>
+                </tr>
+      
+          </tbody>
+
+        </table>
+
 
         <span class="heading">Acknowledgements</span>
 
@@ -200,7 +271,7 @@
         </p>
 
 
-        <h2 id="about">About Me</h2>
+        <h2 id="about">About</h2>
 
         <!-- Profile box -->
         <!-- https://bulma.io/documentation/layout/media-object/ -->
