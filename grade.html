@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Bar Chart</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <!-- Load Font Awesome 5 (free) icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+
+<!-- Page header -->
+  <!-- https://bulma.io/documentation/layout/hero/ -->
+  <section class="hero is-info is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <!-- TODO: Change title -->
+        <h1 class="title">Air Traffic Visualizations for San Francisco Airport</h1>
+        <!-- TODO: Change subtitle -->
+        <h2 class="subtitle">Air Traffic Passenger Statistics Visualizations for 2005-2019</h2>
+      </div>
+    </div>
+  </section>
+  <!-- End page header -->
+
+  <!-- Page navigation -->
+  <!-- https://bulma.io/documentation/components/navbar/ -->
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <!-- TODO: Change link to repository homepage if needed -->
+        <!-- TODO: Change which navbar-item is-active if needed -->
+        <a class="navbar-item is-active" href="index.html">
+          <span class="icon"><i class="fas fa-home"></i></span>
+          <span>Home</span>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="main-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="main-menu" class="navbar-menu has-text-weight-medium">
+        <!-- Left navbar items -->
+        <div class="navbar-start">
+          <a class="navbar-item" href="#data" title="Data">
+            <span class="icon"><i class="fas fa-table"></i></span>
+            <span>Data</span>
+          </a>
+
+          <!-- TODO: Modify or remove dropdown -->
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Visualizations
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="line.html" class="navbar-item">
+                <span class="icon"><i class="fas fa-chart-line"></i></span>
+                <span>Line Chart</span>
+              </a>
+              <a href="area_chart.html" class="navbar-item">
+                <span class="icon"><i class="fas fa-chart-area"></i></span>
+                <span>Area Chart</span>
+              </a>
+
+              <hr class="navbar-divider">
+
+              <a href="bar_chart.html" class="navbar-item">
+                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                <span>Bar Chart</span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Right navbar items -->
+        <div class="navbar-end">
+          <!-- TODO: Update as needed -->
+          <a class="navbar-item" href="#about" title="About">
+            <span class="icon"><i class="fas fa-tasks"></i></span>
+            <span>Grade</span>
+          </a>
+
+          <a class="navbar-item" href="about.html" title="About">
+            <span class="icon"><i class="fas fa-info-circle"></i></span>
+            <span>About</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End page navigation -->
+<body>
+  <section class="section">
+    <div class="container content">
+      
+        <h2 id="grade">Grade</h2>
+
+        <p>The letter grade for this homework will be broken down as follows:</p>
+
+<table class="table is-hoverable is-auto">
+  <thead>
+    <tr>
+      <th style="text-align: center">Letter</th>
+      <th style="text-align: left">Requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td style="text-align: center">C</td>
+      <td style="text-align: left"><br />Prototype <strong>3</strong> unique visualizations using Tableau Desktop.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">B</td>
+      <td style="text-align: left">C-level requirements plus implement <strong>1</strong> of the Tableau prototypes in D3 version 5.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">A</td>
+      <td style="text-align: left">C-level requirements plus implement <strong>2</strong> of the Tableau prototypes in D3 version 5.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Details on each grade level.</p>
+
+<h5 class="has-text-grey" id="c-level-d-level-functionality">C-Level Functionality</h5>
+
+<p>Prototype three different basic visualizations of the dataset using Tableau Desktop. Specifically:<span class="tag is-primary">The requirments for this level has been met</span></p>
+
+<ul>
+  <li>
+    <p>At least <strong>3 different visualizations on Tableau.</strong>.</p>
+  </li>
+  <li>At least <strong>2 different encodings</strong> from the following list:
+    <ul class="fa-ul">
+      <li><i class="far fa-chart-scatter fa-li"></i> Encode data using points (e.g. scatter or bubble plot)</li>
+      <li><i class="far fa-chart-bar fa-li"></i> Encode data using bars (e.g. horizontal/vertical bar charts, stacked or grouped bars, small multiples, and histograms)</li>
+      <li><i class="far fa-chart-area fa-li"></i> Encode data using area (e.g. area charts, stacked area, small multiples)</li>
+      <li><i class="far fa-chart-pie fa-li"></i> Encode data using heatmaps or pie charts</li>
+    </ul>
+  </li>
+  <li>
+    <p>At least <strong>2 different perspectives</strong> of the data.</p>
+  </li>
+  <li>
+    <p>Use of <strong>colors to encode data</strong> in <em>at least</em> one visualization. This visualization must include a color legend in the static image export.</p>
+  </li>
+  <li>
+    <p>Use <strong>titles and axis labels</strong> where appropriate to make sure the encoding is clear.</p>
+  </li>
+  <li>For each visualization, <strong>include a caption</strong> including name and original data source.</li>
+</ul>
+
+<h5 class="has-text-grey" id="b-level-c-level-functionality">B-Level Functionality</h5>
+
+<p>Implement one of the Tableau prototypes in D3 version 5. Specifically:<span class="tag is-primary">The requirments for this level has been met</span></p>
+
+<ul>
+  <li>
+    <p>Use the same visualization technique and data encoding as one of Tableau visualizations.</p>
+  </li>
+</ul>
+
+<h5 class="has-text-grey" id="a-level-b-level-functionality">A-Level Functionality</h5>
+
+<p>This has the same requirements as the B-level functionality, except for a second Tableau prototype.<span class="tag is-primary">The requirments for this level has been met</span></p>
+
+
+<p><strong> Overall, 5 Visualizations has been created in which 2 of them are implemented using d3.js</strong></p>
+
+    </div>
+  </section>
+  
+  </body>
+
+
+<!-- Page footer -->
+  <!-- https://bulma.io/documentation/layout/footer/ -->
+  <footer class="footer">
+    <div class="content has-text-centered is-size-7">
+      <p>
+        <a href="#top">
+          <span class="fas fa-arrow-up"></span>
+          <span class="has-text-weight-medium">Back to Top</span>
+        </a>
+      </p>
+
+      <p>
+        <!-- TODO: Change to link to your Github repository -->
+        <a href="https://github.com/usf-cs360-spring2020/template-bulma" class="button is-small" style="padding-left: 1em; padding-right: 1em;">
+          <i class="fab fa-github-alt"></i>&nbsp;<strong>Github</strong>
+        </a>
+
+        <a href="https://fontawesome.com/" class="button is-small" style="padding-left: 1em; padding-right: 1em;">
+          <i class="fab fa-font-awesome"></i>&nbsp;<strong>FontAwesome</strong>
+        </a>
+
+        <a href="https://bulma.io" class="button is-small">
+          <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="128" height="24">
+        </a>
+      </p>
+    </div>
+  </footer>
+  <!-- End page footer -->
+
+  <!-- Mobile menu responsiveness -->
+  <!-- https://bulma.io/documentation/components/navbar/ -->
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+  </script>
+  <!-- End mobile menu responsiveness -->
